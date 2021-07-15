@@ -132,7 +132,7 @@
     "webpack-dev-server": "3.11.2",
     "whatwg-fetch": "3.6.2",
     "browserslist": "4.16.6",
-    "caniuse-lite": "1.0.30001241",
+    "caniuse-lite": "1.0.30001245",
     "rollup": "2.52.6",
     "rollup-plugin-babel": "4.4.0",
     "rollup-plugin-commonjs": "10.1.0",
