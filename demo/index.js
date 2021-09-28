@@ -1,5 +1,5 @@
-import { loadPlugin, HTMLClip } from "@kissmybutton/motorcortex";
-import Player from "@kissmybutton/motorcortex-player";
+import { loadPlugin, HTMLClip } from "@donkeyclip/motorcortex";
+import Player from "@donkeyclip/motorcortex-player";
 import textfxs from "../src/index";
 
 const Clip = loadPlugin(textfxs);
