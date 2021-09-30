@@ -2971,7 +2971,7 @@ var FontWeightValidation = {
 };
 
 var name = "@donkeyclip/motorcortex-textfxs";
-var version = "0.1.6";
+var version = "0.1.7";
 
 var index = {
   npm_name: name,
