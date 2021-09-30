@@ -83,6 +83,8 @@ function _assertThisInitialized$1(self) {
 function _possibleConstructorReturn$1(self, call) {
   if (call && (typeof call === "object" || typeof call === "function")) {
     return call;
+  } else if (call !== void 0) {
+    throw new TypeError("Derived constructors may only return object or undefined");
   }
 
   return _assertThisInitialized$1(self);
@@ -1357,7 +1359,7 @@ var Anime$4 = /*#__PURE__*/function (_MotorCortex$Effect) {
   }]);
 
   return Anime;
-}(MotorCortex__default['default'].Effect);
+}(MotorCortex__default["default"].Effect);
 /**
  * Takes as attributes:
  * {
@@ -1411,7 +1413,7 @@ var MotionPath = /*#__PURE__*/function (_MotorCortex$Effect) {
   }]);
 
   return MotionPath;
-}(MotorCortex__default['default'].Effect);
+}(MotorCortex__default["default"].Effect);
 
 var nu = ["cm", "mm", "in", "px", "pt", "pc", "em", "ex", "ch", "rem", "vw", "vh", "vmin", "vmax", "%"];
 var ru = ["deg", "rad", "grad", "turn"];
@@ -2309,7 +2311,7 @@ var index$1 = {
   compositeAttributes: compositeAttributes
 };
 
-var Anime$3 = MotorCortex__default['default'].loadPlugin(index$1);
+var Anime$3 = MotorCortex__default["default"].loadPlugin(index$1);
 
 var _require$2 = require("./helpers"),
     fontFamilyHelper$2 = _require$2.fontFamilyHelper;
@@ -2400,7 +2402,7 @@ var SvgExplosion = /*#__PURE__*/function (_MotorCortex$HTMLClip) {
           selector: ".letter-" + i,
           easing: "easeOutExpo"
         });
-        var polyMcGrou = new MotorCortex__default['default'].Group();
+        var polyMcGrou = new MotorCortex__default["default"].Group();
         var waitTIme = 0;
 
         for (var j = 0; j < 8; j++) {
@@ -2507,9 +2509,9 @@ var SvgExplosion = /*#__PURE__*/function (_MotorCortex$HTMLClip) {
   }]);
 
   return SvgExplosion;
-}(MotorCortex__default['default'].HTMLClip);
+}(MotorCortex__default["default"].HTMLClip);
 
-var Anime$2 = MotorCortex__default['default'].loadPlugin(index$1);
+var Anime$2 = MotorCortex__default["default"].loadPlugin(index$1);
 
 var _require$1 = require("./helpers"),
     fontFamilyHelper$1 = _require$1.fontFamilyHelper;
@@ -2562,7 +2564,7 @@ var SvgLines = /*#__PURE__*/function (_MotorCortex$HTMLClip) {
   }]);
 
   return SvgLines;
-}(MotorCortex__default['default'].HTMLClip);
+}(MotorCortex__default["default"].HTMLClip);
 
 var loadIncidents = (function (Anime, colorsRGB, duration) {
   return [new Anime.Anime({
@@ -2689,7 +2691,7 @@ var loadIncidents = (function (Anime, colorsRGB, duration) {
   })];
 });
 
-var Anime$1 = MotorCortex__default['default'].loadPlugin(index$1);
+var Anime$1 = MotorCortex__default["default"].loadPlugin(index$1);
 
 var _require = require("../helpers"),
     fontFamilyHelper = _require.fontFamilyHelper;
@@ -2758,9 +2760,9 @@ var Shadow = /*#__PURE__*/function (_MotorCortex$HTMLClip) {
   }]);
 
   return Shadow;
-}(MotorCortex__default['default'].HTMLClip);
+}(MotorCortex__default["default"].HTMLClip);
 
-var Anime = MotorCortex__default['default'].loadPlugin(index$1);
+var Anime = MotorCortex__default["default"].loadPlugin(index$1);
 
 var FontWeight = /*#__PURE__*/function (_MotorCortex$HTMLClip) {
   _inherits$1(FontWeight, _MotorCortex$HTMLClip);
@@ -2803,7 +2805,7 @@ var FontWeight = /*#__PURE__*/function (_MotorCortex$HTMLClip) {
   }, {
     key: "buildTree",
     value: function buildTree() {
-      var fontWeight = new MotorCortex__default['default'].Combo({
+      var fontWeight = new MotorCortex__default["default"].Combo({
         incidents: [{
           incidentClass: Anime.Anime,
           attrs: {
@@ -2836,7 +2838,7 @@ var FontWeight = /*#__PURE__*/function (_MotorCortex$HTMLClip) {
   }]);
 
   return FontWeight;
-}(MotorCortex__default['default'].HTMLClip);
+}(MotorCortex__default["default"].HTMLClip);
 
 var SvgExplosionValidation = {
   text: {

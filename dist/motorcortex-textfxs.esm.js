@@ -77,6 +77,8 @@ function _assertThisInitialized$1(self) {
 function _possibleConstructorReturn$1(self, call) {
   if (call && (typeof call === "object" || typeof call === "function")) {
     return call;
+  } else if (call !== void 0) {
+    throw new TypeError("Derived constructors may only return object or undefined");
   }
 
   return _assertThisInitialized$1(self);
@@ -2987,4 +2989,4 @@ var index = {
   }]
 };
 
-export default index;
+export { index as default };
