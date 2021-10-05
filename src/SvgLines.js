@@ -2,7 +2,7 @@ import MotorCortex from "@donkeyclip/motorcortex";
 import AnimeDefinition from "@donkeyclip/motorcortex-anime";
 
 const Anime = MotorCortex.loadPlugin(AnimeDefinition);
-const { fontFamilyHelper } = require("./helpers");
+import { fontFamilyHelper } from "./helpers";
 
 export default class SvgLines extends MotorCortex.HTMLClip {
   get fonts() {
@@ -12,8 +12,8 @@ export default class SvgLines extends MotorCortex.HTMLClip {
         src: `https://fonts.googleapis.com/css2?family=${fontFamilyHelper(
           this.attrs.fontFamily,
           this.attrs.fontWeight
-        )}&display=swap`
-      }
+        )}&display=swap`,
+      },
     ];
     return font;
   }
@@ -95,12 +95,12 @@ export default class SvgLines extends MotorCortex.HTMLClip {
       {
         animatedAttrs: {
           strokeDashoffset: "35%",
-          strokeDasharray: " 0 87.5%"
-        }
+          strokeDasharray: " 0 87.5%",
+        },
       },
       {
         duration: 4000,
-        selector: `.text-copy`
+        selector: `.text-copy`,
       }
     );
     this.addIncident(svgline, 0);

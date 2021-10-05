@@ -2311,10 +2311,17 @@ var index$1 = {
   compositeAttributes: compositeAttributes
 };
 
-var Anime$3 = MotorCortex__default["default"].loadPlugin(index$1);
+function fontFamilyHelper$1(fontFamily, fontWeight) {
+  var wordlist = fontFamily.split(" ").join("+");
 
-var _require$2 = require("./helpers"),
-    fontFamilyHelper$2 = _require$2.fontFamilyHelper;
+  if (fontWeight) {
+    wordlist += ":wght@".concat(fontWeight);
+  }
+
+  return wordlist;
+}
+
+var Anime$3 = MotorCortex__default["default"].loadPlugin(index$1);
 
 var SvgExplosion = /*#__PURE__*/function (_MotorCortex$HTMLClip) {
   _inherits$1(SvgExplosion, _MotorCortex$HTMLClip);
@@ -2330,7 +2337,7 @@ var SvgExplosion = /*#__PURE__*/function (_MotorCortex$HTMLClip) {
   _createClass$1(SvgExplosion, [{
     key: "fonts",
     get: function get() {
-      var family = fontFamilyHelper$2(this.attrs.fontFamily, this.attrs.fontWeight);
+      var family = fontFamilyHelper$1(this.attrs.fontFamily, this.attrs.fontWeight);
       var font = [{
         type: "google-font",
         src: "https://fonts.googleapis.com/css2?family=".concat(family, "&display=swap")
@@ -2512,9 +2519,6 @@ var SvgExplosion = /*#__PURE__*/function (_MotorCortex$HTMLClip) {
 }(MotorCortex__default["default"].HTMLClip);
 
 var Anime$2 = MotorCortex__default["default"].loadPlugin(index$1);
-
-var _require$1 = require("./helpers"),
-    fontFamilyHelper$1 = _require$1.fontFamilyHelper;
 
 var SvgLines = /*#__PURE__*/function (_MotorCortex$HTMLClip) {
   _inherits$1(SvgLines, _MotorCortex$HTMLClip);

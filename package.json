@@ -39,20 +39,17 @@
     "animation"
   ],
   "lint-staged": {
-    "linters": {
-      "*.json": [
-        "prettier --write",
-        "git add"
-      ],
-      "*.{css,scss}": [
-        "stylelint  \"src/**.css\" \"src/**/*.scss\" --config .stylelintrc.json --fix",
-        "git add"
-      ],
-      "*.{js,jsx}": [
-        "eslint --fix",
-        "git add"
-      ]
-    }
+    "*.{json,md,yml,yaml}": [
+      "prettier --write"
+    ],
+    "*.css": [
+      "prettier --write",
+      "stylelint  \"src/**.css\" --config .stylelintrc.json --fix"
+    ],
+    "*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   },
   "release": {
     "verifyConditions": [
@@ -84,7 +81,7 @@
     "@commitlint/config-conventional": "13.2.0",
     "@donkeyclip/motorcortex": "^7.4.0",
     "@donkeyclip/motorcortex-anime": "2.1.16",
-    "@donkeyclip/motorcortex-player": "^2.2.1",
+    "@donkeyclip/motorcortex-player": "^2.2.3",
     "@rollup/plugin-json": "4.1.0",
     "@semantic-release/changelog": "6.0.0",
     "@semantic-release/git": "10.0.0",
@@ -94,10 +91,10 @@
     "babel-eslint": "10.1.0",
     "babel-loader": "8.2.2",
     "babel-preset-es2015-node5": "1.2.0",
-    "browserslist": "4.17.1",
-    "caniuse-lite": "1.0.30001261",
+    "browserslist": "4.17.3",
+    "caniuse-lite": "1.0.30001264",
     "commitizen": "4.2.4",
-    "concurrently": "6.2.2",
+    "concurrently": "6.3.0",
     "coveralls": "3.1.1",
     "cz-conventional-changelog": "3.3.0",
     "es6-promise": "4.2.8",
@@ -114,12 +111,12 @@
     "husky": "^7.0.2",
     "imports-loader": "3.0.0",
     "json-stringify-safe": "5.0.1",
-    "lint-staged": "11.1.2",
+    "lint-staged": "11.2.0",
     "npm-check-updates": "*",
     "npx": "*",
     "prettier": "2.4.1",
     "rimraf": "3.0.2",
-    "rollup": "2.57.0",
+    "rollup": "2.58.0",
     "rollup-plugin-babel": "4.4.0",
     "rollup-plugin-commonjs": "10.1.0",
     "rollup-plugin-node-resolve": "5.2.0",
@@ -127,9 +124,9 @@
     "semantic-release": "^18.0.0",
     "shelljs": "0.8.4",
     "size-limit": "5.0.5",
-    "webpack": "5.55.1",
+    "webpack": "5.56.1",
     "webpack-cli": "4.8.0",
-    "webpack-dev-server": "4.3.0",
+    "webpack-dev-server": "4.3.1",
     "whatwg-fetch": "3.6.2"
   },
   "husky": {
