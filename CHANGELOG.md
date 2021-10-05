@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.8](https://www.github.com/donkeyclip/motorcortex-textfxs/compare/v0.1.7...v0.1.8) (2021-10-05)
+
+
+### Bug Fixes
+
+* update deps & replace require with import ([3698acc](https://www.github.com/donkeyclip/motorcortex-textfxs/commit/3698acce875930651ef4cfefe230e38d566e217d))
+
 ### [0.1.7](https://www.github.com/donkeyclip/motorcortex-textfxs/compare/v0.1.6...v0.1.7) (2021-09-30)
 
 
