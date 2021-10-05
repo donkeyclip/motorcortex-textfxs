@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.7](https://www.github.com/donkeyclip/motorcortex-textfxs/compare/v0.1.6...v0.1.7) (2021-09-30)
+
+
+### Bug Fixes
+
+* update deps ([21f425d](https://www.github.com/donkeyclip/motorcortex-textfxs/commit/21f425d4f264df0fddf5436b5193c0badc30834f))
+
 ### [0.1.6](https://www.github.com/donkeyclip/motorcortex-textfxs/compare/v0.1.5...v0.1.6) (2021-09-29)
 
 
