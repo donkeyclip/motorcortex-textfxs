@@ -1,7 +1,7 @@
 import MotorCortex from "@donkeyclip/motorcortex";
 import AnimeDefinition from "@donkeyclip/motorcortex-anime";
 const Anime = MotorCortex.loadPlugin(AnimeDefinition);
-const { fontFamilyHelper } = require("./helpers");
+import { fontFamilyHelper } from "./helpers";
 
 export default class SvgExplosion extends MotorCortex.HTMLClip {
   get fonts() {
@@ -12,8 +12,8 @@ export default class SvgExplosion extends MotorCortex.HTMLClip {
     const font = [
       {
         type: `google-font`,
-        src: `https://fonts.googleapis.com/css2?family=${family}&display=swap`
-      }
+        src: `https://fonts.googleapis.com/css2?family=${family}&display=swap`,
+      },
     ];
     return font;
   }
@@ -146,22 +146,22 @@ export default class SvgExplosion extends MotorCortex.HTMLClip {
             transform: {
               translateY: "0%",
               scale: 1,
-              rotate: rotation + "deg"
-            }
+              rotate: rotation + "deg",
+            },
           },
           initialValues: {
             width: "0px",
             opacity: 0,
             transform: {
               translateY: "100%",
-              scale: 0
-            }
-          }
+              scale: 0,
+            },
+          },
         },
         {
           duration: 200,
           selector: ".letter-" + i,
-          easing: "easeOutExpo"
+          easing: "easeOutExpo",
         }
       );
       const polyMcGrou = new MotorCortex.Group();
@@ -183,16 +183,16 @@ export default class SvgExplosion extends MotorCortex.HTMLClip {
         const polyAnimationOp = new Anime.Anime(
           {
             animatedAttrs: {
-              opacity: 1
+              opacity: 1,
             },
             initialValues: {
-              opacity: 0
-            }
+              opacity: 0,
+            },
           },
           {
             duration: 1,
             selector: `.poligon-${i}-${j},.circ-${i}-${j}`,
-            easing: "easeOutExpo"
+            easing: "easeOutExpo",
           }
         );
 
@@ -202,24 +202,24 @@ export default class SvgExplosion extends MotorCortex.HTMLClip {
               transform: {
                 rotate: Math.random() * 360 + "deg",
                 translateX: x2 - circSize + "px",
-                translateY: y2 - circSize + "px"
+                translateY: y2 - circSize + "px",
               },
-              opacity: 0
+              opacity: 0,
             },
             initialValues: {
               transform: {
                 scale: circSize * 0.15,
                 rotate: Math.random() * 360 + "deg",
                 translateX: x - offset + "px",
-                translateY: y - offset + "px"
+                translateY: y - offset + "px",
               },
-              opacity: 1
-            }
+              opacity: 1,
+            },
           },
           {
             duration: 600,
             selector: `.circ-${i}-${j}`,
-            easing: "easeOutQuint"
+            easing: "easeOutQuint",
           }
         );
 
@@ -229,24 +229,24 @@ export default class SvgExplosion extends MotorCortex.HTMLClip {
               transform: {
                 rotate: Math.random() * 360 + "deg",
                 translateX: x2 - offset + "px",
-                translateY: y2 - offset + "px"
+                translateY: y2 - offset + "px",
               },
-              opacity: 0
+              opacity: 0,
             },
             initialValues: {
               transform: {
                 scale: scale,
                 rotate: Math.random() * 360 + "deg",
                 translateX: x - offset + "px",
-                translateY: y - offset + "px"
+                translateY: y - offset + "px",
               },
-              opacity: 1
-            }
+              opacity: 1,
+            },
           },
           {
             duration: 600,
             selector: `.poligon-${i}-${j}`,
-            easing: "easeOutQuint"
+            easing: "easeOutQuint",
           }
         );
         polyMcGrou.addIncident(polyAnimationOp, 0);
@@ -261,21 +261,21 @@ export default class SvgExplosion extends MotorCortex.HTMLClip {
             transform: {
               translateY: "50%",
 
-              rotate: "0deg"
-            }
+              rotate: "0deg",
+            },
           },
           initialValues: {
             transform: {
-              translateY: "0%"
+              translateY: "0%",
 
               // rotate: rotation+"deg"
-            }
-          }
+            },
+          },
         },
         {
           duration: 200,
           selector: ".letter-" + i,
-          easing: "easeOutExpo"
+          easing: "easeOutExpo",
         }
       );
 
