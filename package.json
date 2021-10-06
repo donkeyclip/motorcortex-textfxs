@@ -79,7 +79,7 @@
     "@babel/preset-env": "7.15.6",
     "@commitlint/cli": "13.2.0",
     "@commitlint/config-conventional": "13.2.0",
-    "@donkeyclip/motorcortex": "7.5.2",
+    "@donkeyclip/motorcortex": "7.5.4",
     "@donkeyclip/motorcortex-anime": "2.1.16",
     "@donkeyclip/motorcortex-player": "2.2.3",
     "@rollup/plugin-json": "4.1.0",
