@@ -1,9 +1,9 @@
 import MotorCortex from "@donkeyclip/motorcortex";
 import AnimeDefinition from "@donkeyclip/motorcortex-anime";
+import { fontFamilyHelper } from "../helpers";
+import loadIncidents from "./IncidentTree";
 
 const Anime = MotorCortex.loadPlugin(AnimeDefinition);
-const { fontFamilyHelper } = require("../helpers");
-import loadIncidents from "./IncidentTree";
 
 export default class Shadow extends MotorCortex.HTMLClip {
   get fonts() {
@@ -13,8 +13,8 @@ export default class Shadow extends MotorCortex.HTMLClip {
         src: `https://fonts.googleapis.com/css2?family=${fontFamilyHelper(
           this.attrs.fontFamily,
           this.attrs.fontWeight
-        )}&display=swap`
-      }
+        )}&display=swap`,
+      },
     ];
     return font;
   }
@@ -48,7 +48,7 @@ export default class Shadow extends MotorCortex.HTMLClip {
 
       return `${+r},${+g},${+b}`;
     }
-    this.colorsRGB = this.attrs.colors.map(c => hexToRGB(c));
+    this.colorsRGB = this.attrs.colors.map((c) => hexToRGB(c));
 
     return `
       .container {

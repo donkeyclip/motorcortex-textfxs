@@ -4165,7 +4165,7 @@ fixRegExpWellKnownSymbolLogic('split', function (SPLIT, nativeSplit, maybeCallNa
   }];
 }, !SPLIT_WORKS_WITH_OVERWRITTEN_EXEC, UNSUPPORTED_Y);
 
-function fontFamilyHelper$1(fontFamily, fontWeight) {
+function fontFamilyHelper(fontFamily, fontWeight) {
   var wordlist = fontFamily.split(" ").join("+");
 
   if (fontWeight) {
@@ -4191,7 +4191,7 @@ var SvgExplosion = /*#__PURE__*/function (_MotorCortex$HTMLClip) {
   _createClass$1(SvgExplosion, [{
     key: "fonts",
     get: function get() {
-      var family = fontFamilyHelper$1(this.attrs.fontFamily, this.attrs.fontWeight);
+      var family = fontFamilyHelper(this.attrs.fontFamily, this.attrs.fontWeight);
       var font = [{
         type: "google-font",
         src: "https://fonts.googleapis.com/css2?family=".concat(family, "&display=swap")
@@ -4390,7 +4390,7 @@ var SvgLines = /*#__PURE__*/function (_MotorCortex$HTMLClip) {
     get: function get() {
       var font = [{
         type: "google-font",
-        src: "https://fonts.googleapis.com/css2?family=".concat(fontFamilyHelper$1(this.attrs.fontFamily, this.attrs.fontWeight), "&display=swap")
+        src: "https://fonts.googleapis.com/css2?family=".concat(fontFamilyHelper(this.attrs.fontFamily, this.attrs.fontWeight), "&display=swap")
       }];
       return font;
     }
@@ -4673,9 +4673,6 @@ var loadIncidents = (function (Anime, colorsRGB, duration) {
 });
 
 var Anime$1 = MotorCortex.loadPlugin(index$1);
-
-var _require = require("../helpers"),
-    fontFamilyHelper = _require.fontFamilyHelper;
 
 var Shadow = /*#__PURE__*/function (_MotorCortex$HTMLClip) {
   _inherits$1(Shadow, _MotorCortex$HTMLClip);
