@@ -1,5 +1,16 @@
 # Changelog
 
+### [0.1.9](https://www.github.com/donkeyclip/motorcortex-textfxs/compare/v0.1.8...v0.1.9) (2021-12-24)
+
+
+### Bug Fixes
+
+* drop code from demo config ([ad85ad4](https://www.github.com/donkeyclip/motorcortex-textfxs/commit/ad85ad402bfbaef47201322158133fbf511c32fa))
+* fix broken config ([7ed4cdf](https://www.github.com/donkeyclip/motorcortex-textfxs/commit/7ed4cdfb568b7bd79ba2780c00741e628807f1d7))
+* fix broken webpack config ([9a4b064](https://www.github.com/donkeyclip/motorcortex-textfxs/commit/9a4b06471cc54d4480b03778649fd1d41aac818f))
+* fix name import and change licences ([74b83c5](https://www.github.com/donkeyclip/motorcortex-textfxs/commit/74b83c566944a19fffbd0947cdebe4a1360a6c69))
+* replace require with import ([b9821b0](https://www.github.com/donkeyclip/motorcortex-textfxs/commit/b9821b055615fdcbf72a2e6ab6e73e534a6448c1))
+
 ### [0.1.8](https://www.github.com/donkeyclip/motorcortex-textfxs/compare/v0.1.7...v0.1.8) (2021-10-05)
 
 
