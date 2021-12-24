@@ -1,22 +1,22 @@
-
 # motorcortex-textfxs
 
 ## Demo
-[Check it out here](https://kissmybutton.github.io/motorcortex-textfxs/demo/index.html)
+
+[Check it out here](https://donkeyclip.github.io/motorcortex-textfxs/demo/index.html)
 
 ## Installation
 
 ```bash
-$ npm install --save @kissmybutton/motorcortex-textfxs
+$ npm install --save @donkeyclip/motorcortex-textfxs
 # OR
-$ yarn add @kissmybutton/motorcortex-textfxs
+$ yarn add @donkeyclip/motorcortex-textfxs
 ```
 
 ## Loading
 
 ```javascript
-const MotorCortex = require("@kissmybutton/motorcortex/");
-const textfx = require("@kissmybutton/motorcortex-textfxs");
+const MotorCortex = require("@donkeyclip/motorcortex/");
+const textfx = require("@donkeyclip/motorcortex-textfxs");
 const Plugin = MotorCortex.loadPlugin(textfx);
 ```
 
@@ -37,23 +37,23 @@ const SvgLines = new Plugin.SvgLines(
     fontFamily: "Rubik Mono One",
   },
   {
-    selector: ".container3"
+    selector: ".container3",
   }
 );
 ```
 
 ### SvgLines Attrs
 
-| Name        | Are           | Values  |
-| ------------- |:-------------:| -----:|
-| text     |  text  | string |
-| width   |  total width of clip container | all positive numbers |
-| height |  total height of clip container   |  all positive numbers |
-| background |  the color of background |  hex values or RGB(A) or text ("blue", "red", etc)  |
-| colors |  the list colors of svg elementes |  hex values or RGB(A) or text ("blue", "red", etc)  |
-| fontFamily |  font family  |  string |
-| fontSize |  size of the font  |  number |
-| fontWeight | the Weight of the font | number|
+| Name       |               Are                |                                            Values |
+| ---------- | :------------------------------: | ------------------------------------------------: |
+| text       |               text               |                                            string |
+| width      |  total width of clip container   |                              all positive numbers |
+| height     |  total height of clip container  |                              all positive numbers |
+| background |     the color of background      | hex values or RGB(A) or text ("blue", "red", etc) |
+| colors     | the list colors of svg elementes | hex values or RGB(A) or text ("blue", "red", etc) |
+| fontFamily |           font family            |                                            string |
+| fontSize   |         size of the font         |                                            number |
+| fontWeight |      the Weight of the font      |                                            number |
 
 ## SvgExplosion
 
@@ -71,29 +71,28 @@ const SvgExplosion = new Plugin.SvgExplosion(
       "#9F6AA7",
       "#5476B3",
       "#2BB19B",
-      "#70B984"
+      "#70B984",
     ],
     fontFamily: "Rubik Mono One",
   },
   {
-    selector: ".container1"
+    selector: ".container1",
   }
 );
 ```
 
 ### SvgExplosion Attrs
 
-| Name        | Are           | Values  |
-| ------------- |:-------------:| -----:|
-| text     |  text  | string |
-| width   |  total width of clip container | all positive numbers |
-| height |  total height of clip container   |  all positive numbers |
-| background |  the color of background |  hex values or RGB(A) or text ("blue", "red", etc)  |
-| colors |  list of colors for leter |  hex values or RGB(A) or text ("blue", "red", etc)  |
-| fontFamily |  font family  |  string |
-| fontSize |  size of the font  |  number |
-| fontWeight | the Weight of the font | number|
-
+| Name       |              Are               |                                            Values |
+| ---------- | :----------------------------: | ------------------------------------------------: |
+| text       |              text              |                                            string |
+| width      | total width of clip container  |                              all positive numbers |
+| height     | total height of clip container |                              all positive numbers |
+| background |    the color of background     | hex values or RGB(A) or text ("blue", "red", etc) |
+| colors     |    list of colors for leter    | hex values or RGB(A) or text ("blue", "red", etc) |
+| fontFamily |          font family           |                                            string |
+| fontSize   |        size of the font        |                                            number |
+| fontWeight |     the Weight of the font     |                                            number |
 
 ## Shadow
 
@@ -108,45 +107,42 @@ const Shadow = new Plugin.Shadow(
     fontSize: 250,
     textColor: "#fcedd8",
     fontFamily: "Pacifico",
-    reverce: false
+    reverce: false,
   },
   {
-    selector: ".container2"
+    selector: ".container2",
   }
 );
 ```
 
 ### Shadow Attrs
 
-| Name        | Are           | Values  |
-| ------------- |:-------------:| -----:|
-| text     |  text  | string |
-| width   |  total width of clip container | all positive numbers |
-| height |  total height of clip container   |  all positive numbers |
-| background |  the color of background |  hex values or RGB(A) or text ("blue", "red", etc)  |
-| colors |  the list colors of svg elementes |  hex values  |
-| speed |  animation speed. Defaults to 1  |  num, min:0 |
-| textColor |  the main color of text |  hex values or RGB(A) or text ("blue", "red", etc) |
-| fontFamily |  font family  |  string |
-| fontSize |  size of the font  |  number |
-| reverce |  reverse tha animation after finish  |  boolean |
-| fontWeight | the Weight of the font | number|
+| Name       |                Are                 |                                            Values |
+| ---------- | :--------------------------------: | ------------------------------------------------: |
+| text       |                text                |                                            string |
+| width      |   total width of clip container    |                              all positive numbers |
+| height     |   total height of clip container   |                              all positive numbers |
+| background |      the color of background       | hex values or RGB(A) or text ("blue", "red", etc) |
+| colors     |  the list colors of svg elementes  |                                        hex values |
+| speed      |   animation speed. Defaults to 1   |                                        num, min:0 |
+| textColor  |       the main color of text       | hex values or RGB(A) or text ("blue", "red", etc) |
+| fontFamily |            font family             |                                            string |
+| fontSize   |          size of the font          |                                            number |
+| reverce    | reverse tha animation after finish |                                           boolean |
+| fontWeight |       the Weight of the font       |                                            number |
 
-## Font 
+## Font
+
 if like to change the font you need to include it in to root clip properties
 
 # Just add your incident to any clip
 
 ```javascript
 anyClip.addIncident(SvgLines, 0);
-
 ```
 
-
 ## License
+
 [MIT License](https://opensource.org/licenses/MIT)
 
-
-  
-  
-[![Kiss My Button](https://presskit.kissmybutton.gr/logos/kissmybutton-logo-small.png)](https://kissmybutton.gr)
+[<img src="https://presskit.donkeyclip.com/logos/donkey%20clip%20logo.svg" width=250></img>](https://donkeyclip.com)
