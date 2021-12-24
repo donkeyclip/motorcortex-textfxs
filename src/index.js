@@ -6,34 +6,34 @@ import {
   ShadowValidation,
   SvgExplosionValidation,
   SvgLineValidation,
-  FontWeightValidation
+  FontWeightValidation,
 } from "./validation";
 
-import { name, version } from "../package.json";
+import pkg from "../package.json";
 
 export default {
-  npm_name: name,
-  version: version,
+  npm_name: pkg.name,
+  version: pkg.version,
   incidents: [
     {
       exportable: SvgExplosion,
       name: "SvgExplosion",
-      attributesValidationRules: SvgExplosionValidation
+      attributesValidationRules: SvgExplosionValidation,
     },
     {
       exportable: SvgLines,
       name: "SvgLines",
-      attributesValidationRules: SvgLineValidation
+      attributesValidationRules: SvgLineValidation,
     },
     {
       exportable: Shadow,
       name: "Shadow",
-      attributesValidationRules: ShadowValidation
+      attributesValidationRules: ShadowValidation,
     },
     {
       exportable: FontWeight,
       name: "FontWeight",
-      attributesValidationRules: FontWeightValidation
-    }
-  ]
+      attributesValidationRules: FontWeightValidation,
+    },
+  ],
 };
