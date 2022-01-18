@@ -84,7 +84,7 @@ const SvgLines = new Plugin.SvgLines(
 
 #### IMPORTANT
 
-If like to change the font family you need to include it in to root clip properties
+If you like to change the font family you need to include it into root clip properties
 
 ## SvgExplosion
 
@@ -168,7 +168,7 @@ const Shadow = new Plugin.Shadow(
 
 #### IMPORTANT
 
-If like to change the font family you need to include it in to root clip properties
+If you like to change the font family you need to include it into root clip properties
 
 # Adding Incidents in your clip
 
