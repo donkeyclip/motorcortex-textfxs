@@ -12,6 +12,7 @@
   - [SvgLines](#svglines)
   - [SvgExplosion](#svgexplosion)
   - [Shadow](#shadow)
+  - [FontWeight](#fontweight)
 - [Adding Incidents in your clip](#adding-incidents-in-your-clip)
 - [Contributing](#contributing)
 - [License](#license)
@@ -169,6 +170,40 @@ const Shadow = new Plugin.Shadow(
 #### IMPORTANT
 
 If you like to change the font family you need to include it into root clip properties
+
+## FontWeight
+```javascript 
+const FontWeight = new Clip.FontWeight(
+  {
+    width: 1920,
+    height: 300,
+    text: "FontWeight Animation",
+    textColor: "#ff0000",
+    repeats: 70,
+    fontSize: 20,
+    fontFamily: "Commissioner",
+    fontWeightList: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+    rotate: 90
+  },
+  {
+    selector: ".container4"
+  }
+);
+```
+
+### FontWeight Attrs
+
+| Name       |                Are                 |                                            Values |
+| ---------- | :--------------------------------: | ------------------------------------------------: |
+| text       |                text                |                                            string |
+| width      |   total width of clip container    |                              all positive numbers |
+| height     |   total height of clip container   |                              all positive numbers |
+| textColor  |          the color of text         | hex values or RGB(A) or text ("blue", "red", etc) |
+| repeats    |         total lines of text        |                                            number |
+| fontFamily |            font family             |                                            string |
+| fontSize   |          size of the font          |                                            number |
+| rotate     |  degrees for rotate transformation |                                            number |
+| fontWeightList |  a list of all the weights that text will get |                            numbers |
 
 # Adding Incidents in your clip
 
