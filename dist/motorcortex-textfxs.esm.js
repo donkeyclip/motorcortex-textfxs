@@ -5099,7 +5099,7 @@ var devDependencies = {
 	"@babel/preset-env": "7.16.10",
 	"@commitlint/cli": "13.2.1",
 	"@commitlint/config-conventional": "13.2.0",
-	"@donkeyclip/motorcortex": "7.6.6",
+	"@donkeyclip/motorcortex": "7.7.0",
 	"@donkeyclip/motorcortex-anime": "2.1.16",
 	"@donkeyclip/motorcortex-player": "2.4.4",
 	"@rollup/plugin-babel": "5.3.0",
