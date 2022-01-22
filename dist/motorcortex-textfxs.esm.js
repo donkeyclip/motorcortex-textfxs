@@ -5130,7 +5130,7 @@ var devDependencies = {
 	"lint-staged": "12.2.2",
 	prettier: "2.5.1",
 	rimraf: "3.0.2",
-	rollup: "2.65.0",
+	rollup: "2.66.0",
 	"rollup-plugin-terser": "7.0.2",
 	"semantic-release": "18.0.1",
 	"size-limit": "6.0.4",
