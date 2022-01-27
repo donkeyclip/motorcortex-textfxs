@@ -1,8 +1,36 @@
-# motorcortex-textfxs
+# MotorCortex-Textfxs
+
+**Table of Contents**
+
+- [MotorCortex-Textfxs](#motorcortex-textfxs)
+  - [Demo](#demo)
+- [Intro / Features](#intro--features)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Importing and Loading](#importing-and-loading)
+- [Creating Incidents](#creating-incidents)
+  - [SvgLines](#svglines)
+  - [SvgExplosion](#svgexplosion)
+  - [Shadow](#shadow)
+  - [FontWeight](#fontweight)
+- [Adding Incidents in your clip](#adding-incidents-in-your-clip)
+- [Contributing](#contributing)
+- [License](#license)
+- [Sponsored by](#sponsored-by)
 
 ## Demo
 
 [Check it out here](https://donkeyclip.github.io/motorcortex-textfxs/demo/index.html)
+
+# Intro / Features
+Using MotorCortex-Textfxs you can create stunning text animations.
+
+This Plugin exposes three Incidents:
+- SvgLines
+- SvgExplosion
+- Shadow
+
+# Getting Started
 
 ## Installation
 
@@ -12,15 +40,15 @@ $ npm install --save @donkeyclip/motorcortex-textfxs
 $ yarn add @donkeyclip/motorcortex-textfxs
 ```
 
-## Loading
+## Importing and loading
 
 ```javascript
-const MotorCortex = require("@donkeyclip/motorcortex/");
-const textfx = require("@donkeyclip/motorcortex-textfxs");
-const Plugin = MotorCortex.loadPlugin(textfx);
+import { loadPlugin } from "@donkeyclip/motorcortex";
+import textfx from "@donkeyclip/motorcortex-textfxs";
+const Plugin = loadPlugin(textfx);
 ```
 
-# Create incident
+# Creating Incidents
 
 ## SvgLines
 
@@ -54,6 +82,10 @@ const SvgLines = new Plugin.SvgLines(
 | fontFamily |           font family            |                                            string |
 | fontSize   |         size of the font         |                                            number |
 | fontWeight |      the Weight of the font      |                                            number |
+
+#### IMPORTANT
+
+If you like to change the font family you need to include it into root clip properties
 
 ## SvgExplosion
 
@@ -94,6 +126,10 @@ const SvgExplosion = new Plugin.SvgExplosion(
 | fontSize   |        size of the font        |                                            number |
 | fontWeight |     the Weight of the font     |                                            number |
 
+#### IMPORTANT
+
+If like to change the font family you need to include it in to root clip properties
+
 ## Shadow
 
 ```javascript
@@ -131,18 +167,62 @@ const Shadow = new Plugin.Shadow(
 | reverce    | reverse tha animation after finish |                                           boolean |
 | fontWeight |       the Weight of the font       |                                            number |
 
-## Font
+#### IMPORTANT
 
-if like to change the font you need to include it in to root clip properties
+If you like to change the font family you need to include it into root clip properties
 
-# Just add your incident to any clip
-
-```javascript
-anyClip.addIncident(SvgLines, 0);
+## FontWeight
+```javascript 
+const FontWeight = new Clip.FontWeight(
+  {
+    width: 1920,
+    height: 300,
+    text: "FontWeight Animation",
+    textColor: "#ff0000",
+    repeats: 70,
+    fontSize: 20,
+    fontFamily: "Commissioner",
+    fontWeightList: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+    rotate: 90
+  },
+  {
+    selector: ".container4"
+  }
+);
 ```
 
-## License
+### FontWeight Attrs
+
+| Name       |                Are                 |                                            Values |
+| ---------- | :--------------------------------: | ------------------------------------------------: |
+| text       |                text                |                                            string |
+| width      |   total width of clip container    |                              all positive numbers |
+| height     |   total height of clip container   |                              all positive numbers |
+| textColor  |          the color of text         | hex values or RGB(A) or text ("blue", "red", etc) |
+| repeats    |         total lines of text        |                                            number |
+| fontFamily |            font family             |                                            string |
+| fontSize   |          size of the font          |                                            number |
+| rotate     |  degrees for rotate transformation |                                            number |
+| fontWeightList |  a list of all the weights that text will get |                            numbers |
+
+# Adding Incidents in your clip
+
+```javascript
+clipName.addIncident(incidentName,startTime);
+```
+
+# Contributing 
+
+In general, we follow the "fork-and-pull" Git workflow, so if you want to submit patches and additions you should follow the next steps:
+1.	**Fork** the repo on GitHub
+2.	**Clone** the project to your own machine
+3.	**Commit** changes to your own branch
+4.	**Push** your work back up to your fork
+5.	Submit a **Pull request** so that we can review your changes
+
+# License
 
 [MIT License](https://opensource.org/licenses/MIT)
 
+# Sponsored by
 [<img src="https://presskit.donkeyclip.com/logos/donkey%20clip%20logo.svg" width=250></img>](https://donkeyclip.com)
