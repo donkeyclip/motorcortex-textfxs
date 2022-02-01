@@ -322,10 +322,10 @@ var store$6 = sharedStore$1;
 (shared$8.exports = function (key, value) {
   return store$6[key] || (store$6[key] = value !== undefined ? value : {});
 })('versions', []).push({
-  version: '3.20.3',
+  version: '3.21.0',
   mode: 'global',
   copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',
-  license: 'https://github.com/zloirock/core-js/blob/v3.20.3/LICENSE',
+  license: 'https://github.com/zloirock/core-js/blob/v3.21.0/LICENSE',
   source: 'https://github.com/zloirock/core-js'
 });
 
@@ -5297,7 +5297,7 @@ var devDependencies = {
 	"caniuse-lite": "1.0.30001304",
 	commitizen: "4.2.4",
 	concurrently: "7.0.0",
-	"core-js": "3.20.3",
+	"core-js": "3.21.0",
 	"cz-conventional-changelog": "3.3.0",
 	eslint: "7.32.0",
 	"eslint-config-prettier": "8.3.0",
