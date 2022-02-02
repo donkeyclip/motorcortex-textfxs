@@ -1,5 +1,5 @@
-export default (Anime, colorsRGB, duration) => [
-  new Anime.Anime(
+export default (CSSEffect, colorsRGB, duration) => [
+  new CSSEffect(
     {
       animatedAttrs: {
         textShadow: ` 5px 5px 0px rgba(${colorsRGB[0]},1), 
@@ -30,7 +30,7 @@ export default (Anime, colorsRGB, duration) => [
     }
   ),
 
-  new Anime.Anime(
+  new CSSEffect(
     {
       animatedAttrs: {
         textShadow: ` 5px 5px 0px rgba(${colorsRGB[0]},1), 
@@ -60,7 +60,7 @@ export default (Anime, colorsRGB, duration) => [
       selector: `.text`
     }
   ),
-  new Anime.Anime(
+  new CSSEffect(
     {
       animatedAttrs: {
         textShadow: ` 5px 5px 0px rgba(${colorsRGB[0]},1), 
@@ -91,7 +91,7 @@ export default (Anime, colorsRGB, duration) => [
     }
   ),
 
-  new Anime.Anime(
+  new CSSEffect(
     {
       animatedAttrs: {
         textShadow: ` 5px 5px 0px rgba(${colorsRGB[0]},1), 
@@ -122,7 +122,7 @@ export default (Anime, colorsRGB, duration) => [
     }
   ),
 
-  new Anime.Anime(
+  new CSSEffect(
     {
       animatedAttrs: {
         textShadow: ` 5px 5px 0px rgba(${colorsRGB[0]},1), 
@@ -153,7 +153,7 @@ export default (Anime, colorsRGB, duration) => [
     }
   ),
 
-  new Anime.Anime(
+  new CSSEffect(
     {
       animatedAttrs: {
         textShadow: ` 5px 5px 0px rgba(${colorsRGB[0]},1), 
@@ -186,7 +186,7 @@ export default (Anime, colorsRGB, duration) => [
 
   ///REVERSE
 
-  new Anime.Anime(
+  new CSSEffect(
     {
       animatedAttrs: {
         textShadow: `5px 5px 0px rgba(${colorsRGB[0]},1), 
@@ -216,7 +216,7 @@ export default (Anime, colorsRGB, duration) => [
       selector: `.text`
     }
   ),
-  new Anime.Anime(
+  new CSSEffect(
     {
       animatedAttrs: {
         textShadow: `5px 5px 0px rgba(${colorsRGB[0]},1), 
@@ -246,7 +246,7 @@ export default (Anime, colorsRGB, duration) => [
       selector: `.text`
     }
   ),
-  new Anime.Anime(
+  new CSSEffect(
     {
       animatedAttrs: {
         textShadow: `5px 5px 0px rgba(${colorsRGB[0]},1), 
@@ -276,7 +276,7 @@ export default (Anime, colorsRGB, duration) => [
       selector: `.text`
     }
   ),
-  new Anime.Anime(
+  new CSSEffect(
     {
       animatedAttrs: {
         textShadow: `5px 5px 0px rgba(${colorsRGB[0]},1), 
@@ -306,7 +306,7 @@ export default (Anime, colorsRGB, duration) => [
       selector: `.text`
     }
   ),
-  new Anime.Anime(
+  new CSSEffect(
     {
       animatedAttrs: {
         textShadow: `5px 5px 0px rgba(${colorsRGB[0]},1), 
@@ -336,7 +336,7 @@ export default (Anime, colorsRGB, duration) => [
       selector: `.text`
     }
   ),
-  new Anime.Anime(
+  new CSSEffect(
     {
       animatedAttrs: {
         textShadow: `5px 5px 0px rgba(${colorsRGB[0]},0), 

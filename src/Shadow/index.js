@@ -1,11 +1,9 @@
-import MotorCortex from "@donkeyclip/motorcortex";
-import AnimeDefinition from "@donkeyclip/motorcortex-anime";
+import {CSSEffect,HTMLClip} from "@donkeyclip/motorcortex";
 import { fontFamilyHelper } from "../helpers";
 import loadIncidents from "./IncidentTree";
 
-const Anime = MotorCortex.loadPlugin(AnimeDefinition);
 
-export default class Shadow extends MotorCortex.HTMLClip {
+export default class Shadow extends HTMLClip {
   get fonts() {
     const font = [
       {
@@ -78,7 +76,7 @@ export default class Shadow extends MotorCortex.HTMLClip {
   }
 
   buildTree() {
-    const incidents = loadIncidents(Anime, this.colorsRGB, 500);
+    const incidents = loadIncidents(CSSEffect, this.colorsRGB, 500);
     const length = this.attrs.reverse ? incidents.length : incidents.length / 2;
     for (let i = 0; i < length; i++) {
       this.addIncident(incidents[i], i * 500);
