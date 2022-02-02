@@ -1,10 +1,7 @@
-import MotorCortex from "@donkeyclip/motorcortex";
-import AnimeDefinition from "@donkeyclip/motorcortex-anime";
-
-const Anime = MotorCortex.loadPlugin(AnimeDefinition);
+import {CSSEffect,HTMLClip} from "@donkeyclip/motorcortex";
 import { fontFamilyHelper } from "./helpers";
 
-export default class SvgLines extends MotorCortex.HTMLClip {
+export default class SvgLines extends HTMLClip {
   get fonts() {
     const font = [
       {
@@ -91,7 +88,7 @@ export default class SvgLines extends MotorCortex.HTMLClip {
   }
 
   buildTree() {
-    const svgline = new Anime.Anime(
+    const svgline = new CSSEffect(
       {
         animatedAttrs: {
           strokeDashoffset: "35%",

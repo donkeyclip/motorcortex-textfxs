@@ -1,9 +1,7 @@
-import MotorCortex from "@donkeyclip/motorcortex";
-import AnimeDefinition from "@donkeyclip/motorcortex-anime";
-const Anime = MotorCortex.loadPlugin(AnimeDefinition);
+import {CSSEffect,HTMLClip,Group} from "@donkeyclip/motorcortex";
 import { fontFamilyHelper } from "./helpers";
 
-export default class SvgExplosion extends MotorCortex.HTMLClip {
+export default class SvgExplosion extends HTMLClip {
   get fonts() {
     const family = fontFamilyHelper(
       this.attrs.fontFamily,
@@ -138,7 +136,7 @@ export default class SvgExplosion extends MotorCortex.HTMLClip {
     let polyPosition = (this.textSize * this.attrs.text.length) / 2;
     for (let i = 0; i < this.attrs.text.length; i++) {
       const rotation = -50 + Math.random() * 100;
-      const textAnimation = new Anime.Anime(
+      const textAnimation = new CSSEffect(
         {
           animatedAttrs: {
             width: `${this.textSize}px`,
@@ -164,7 +162,7 @@ export default class SvgExplosion extends MotorCortex.HTMLClip {
           easing: "easeOutExpo",
         }
       );
-      const polyMcGrou = new MotorCortex.Group();
+      const polyMcGrou = new Group();
       let waitTIme = 0;
       for (let j = 0; j < 8; j++) {
         const a = Math.random();
@@ -180,7 +178,7 @@ export default class SvgExplosion extends MotorCortex.HTMLClip {
         const offset = triSize * scale;
         const circSize = this.textSize * 0.05 * Math.random();
 
-        const polyAnimationOp = new Anime.Anime(
+        const polyAnimationOp = new CSSEffect(
           {
             animatedAttrs: {
               opacity: 1,
@@ -196,7 +194,7 @@ export default class SvgExplosion extends MotorCortex.HTMLClip {
           }
         );
 
-        const circAnimation = new Anime.Anime(
+        const circAnimation = new CSSEffect(
           {
             animatedAttrs: {
               transform: {
@@ -223,7 +221,7 @@ export default class SvgExplosion extends MotorCortex.HTMLClip {
           }
         );
 
-        const polyAnimation = new Anime.Anime(
+        const polyAnimation = new CSSEffect(
           {
             animatedAttrs: {
               transform: {
@@ -255,7 +253,7 @@ export default class SvgExplosion extends MotorCortex.HTMLClip {
       }
       polyPosition += this.textSize / 2;
 
-      const textAnimation2 = new Anime.Anime(
+      const textAnimation2 = new CSSEffect(
         {
           animatedAttrs: {
             transform: {

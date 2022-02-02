@@ -1,8 +1,6 @@
-import MotorCortex from "@donkeyclip/motorcortex";
-import AnimeDefinition from "@donkeyclip/motorcortex-anime";
-const Anime = MotorCortex.loadPlugin(AnimeDefinition);
+import {CSSEffect,HTMLClip,Combo} from "@donkeyclip/motorcortex";
 
-export default class FontWeight extends MotorCortex.HTMLClip {
+export default class FontWeight extends HTMLClip {
   get fonts() {
     let wordlist = this.attrs.fontFamily.split(" ").join("+");
     wordlist += `:wght@${this.attrs.fontWeightList.join(";")}`;
@@ -54,11 +52,11 @@ export default class FontWeight extends MotorCortex.HTMLClip {
   }
 
   buildTree() {
-    const fontWeight = new MotorCortex.Combo(
+    const fontWeight = new Combo(
       {
         incidents: [
           {
-            incidentClass: Anime.Anime,
+            incidentClass: CSSEffect,
             attrs: {
               animatedAttrs: {
                 fontWeight: "900"
@@ -70,7 +68,7 @@ export default class FontWeight extends MotorCortex.HTMLClip {
             position: 0
           },
           {
-            incidentClass: Anime.Anime,
+            incidentClass: CSSEffect,
             attrs: {
               animatedAttrs: {
                 fontWeight: "100"
