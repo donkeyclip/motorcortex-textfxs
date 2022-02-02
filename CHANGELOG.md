@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.10](https://www.github.com/donkeyclip/motorcortex-textfxs/compare/v0.1.9...v0.1.10) (2022-02-02)
+
+
+### Bug Fixes
+
+* remove anime plugin and fix demo ([7f58817](https://www.github.com/donkeyclip/motorcortex-textfxs/commit/7f5881725f8245fe94c7054b6353142324b7903f))
+
 ### [0.1.9](https://www.github.com/donkeyclip/motorcortex-textfxs/compare/v0.1.8...v0.1.9) (2021-12-24)
 
 
