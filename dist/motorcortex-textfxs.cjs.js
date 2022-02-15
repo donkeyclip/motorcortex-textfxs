@@ -2882,11 +2882,11 @@ var peerDependencies = {
 	"@donkeyclip/motorcortex": "^7"
 };
 var devDependencies = {
-	"@babel/cli": "7.17.0",
-	"@babel/core": "7.17.2",
+	"@babel/cli": "7.17.3",
+	"@babel/core": "7.17.3",
 	"@babel/eslint-parser": "7.17.0",
 	"@babel/plugin-syntax-jsx": "7.16.7",
-	"@babel/plugin-transform-react-jsx": "7.16.7",
+	"@babel/plugin-transform-react-jsx": "7.17.3",
 	"@babel/preset-env": "7.16.11",
 	"@commitlint/cli": "16.2.1",
 	"@commitlint/config-conventional": "16.2.1",
