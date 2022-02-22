@@ -2880,7 +2880,7 @@ var peerDependencies = {
 	"@donkeyclip/motorcortex": "^7"
 };
 var devDependencies = {
-	"@babel/cli": "7.17.3",
+	"@babel/cli": "7.17.6",
 	"@babel/core": "7.17.5",
 	"@babel/eslint-parser": "7.17.0",
 	"@babel/plugin-syntax-jsx": "7.16.7",
