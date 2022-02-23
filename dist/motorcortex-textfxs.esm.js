@@ -2890,7 +2890,7 @@ var devDependencies = {
 	"@commitlint/config-conventional": "16.2.1",
 	"@donkeyclip/motorcortex": "7.9.2",
 	"@donkeyclip/motorcortex-player": "2.5.0",
-	"@rollup/plugin-babel": "5.3.0",
+	"@rollup/plugin-babel": "5.3.1",
 	"@rollup/plugin-commonjs": "21.0.1",
 	"@rollup/plugin-json": "4.1.0",
 	"@rollup/plugin-node-resolve": "13.1.3",
