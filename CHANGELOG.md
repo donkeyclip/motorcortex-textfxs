@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.11](https://www.github.com/donkeyclip/motorcortex-textfxs/compare/v0.1.10...v0.1.11) (2022-02-28)
+
+
+### Bug Fixes
+
+* fix timing issue ([c1b9711](https://www.github.com/donkeyclip/motorcortex-textfxs/commit/c1b97116413ba37a22695ea4ad47548d249e9fe7))
+
 ### [0.1.10](https://www.github.com/donkeyclip/motorcortex-textfxs/compare/v0.1.9...v0.1.10) (2022-02-02)
 
 
