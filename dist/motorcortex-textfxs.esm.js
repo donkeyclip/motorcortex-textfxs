@@ -2239,7 +2239,7 @@ var SvgExplosion = /*#__PURE__*/function (_HTMLClip) {
         });
         this.addIncident(textAnimation, 200 * (i + 1) + waitTIme);
         this.addIncident(polyMcGrou, 200 * (i + 1) + waitTIme);
-        this.addIncident(textAnimation2, 200 + 200 * (i + 1) + waitTIme);
+        this.addIncident(textAnimation2, this.duration - 200);
         waitTIme = 200 * (i + 1);
       }
     }
