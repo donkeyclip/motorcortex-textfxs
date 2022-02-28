@@ -34,9 +34,9 @@ const clip = new HTMLClip({
   host: document.getElementById("clip"),
   containerParams: {
     width: "1900px",
-    height: "1200px"
+    height: "1200px",
   },
-  id: "root"
+  id: "root",
 });
 
 const SvgExplosion = new Clip.SvgExplosion(
@@ -52,13 +52,13 @@ const SvgExplosion = new Clip.SvgExplosion(
       "#9F6AA7",
       "#5476B3",
       "#2BB19B",
-      "#70B984"
+      "#70B984",
     ],
     fontFamily: "Rubik Mono One",
-    fontWeight: 400
+    fontWeight: 400,
   },
   {
-    selector: ".container1"
+    selector: ".container1",
   }
 );
 
@@ -72,10 +72,11 @@ const Shadow = new Clip.Shadow(
     fontSize: 130,
     textColor: "#fcedd8",
     fontFamily: "Arial",
-    reverse: true
+    reverse: true,
   },
   {
-    selector: ".container2"
+    selector: ".container2",
+    duration: 3000,
   }
 );
 
@@ -89,10 +90,10 @@ const SvgLines = new Clip.SvgLines(
     strokeWidth: 3,
     fontSize: 250,
     verticalAlign: "80%",
-    fontFamily: "Rubik Mono One"
+    fontFamily: "Rubik Mono One",
   },
   {
-    selector: ".container3"
+    selector: ".container3",
   }
 );
 
@@ -106,10 +107,10 @@ const FontWeight = new Clip.FontWeight(
     fontSize: 20,
     fontFamily: "Commissioner",
     fontWeightList: [100, 200, 300, 400, 500, 600, 700, 800, 900],
-    rotate: 90
+    rotate: 90,
   },
   {
-    selector: ".container4"
+    selector: ".container4",
   }
 );
 

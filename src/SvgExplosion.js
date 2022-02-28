@@ -1,4 +1,4 @@
-import {CSSEffect,HTMLClip,Group} from "@donkeyclip/motorcortex";
+import { CSSEffect, HTMLClip, Group } from "@donkeyclip/motorcortex";
 import { fontFamilyHelper } from "./helpers";
 
 export default class SvgExplosion extends HTMLClip {
@@ -276,10 +276,9 @@ export default class SvgExplosion extends HTMLClip {
           easing: "easeOutExpo",
         }
       );
-
       this.addIncident(textAnimation, 200 * (i + 1) + waitTIme);
       this.addIncident(polyMcGrou, 200 * (i + 1) + waitTIme);
-      this.addIncident(textAnimation2, 200 + 200 * (i + 1) + waitTIme);
+      this.addIncident(textAnimation2, this.duration - 200);
       waitTIme = 200 * (i + 1);
     }
   }
