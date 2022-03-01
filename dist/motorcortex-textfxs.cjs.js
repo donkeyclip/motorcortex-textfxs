@@ -2899,7 +2899,7 @@ var devDependencies = {
 	"@semantic-release/changelog": "6.0.1",
 	"@semantic-release/git": "10.0.1",
 	"@semantic-release/github": "8.0.2",
-	"@semantic-release/npm": "9.0.0",
+	"@semantic-release/npm": "9.0.1",
 	"@size-limit/preset-big-lib": "6.0.4",
 	"babel-loader": "8.2.3",
 	browserslist: "4.19.3",
