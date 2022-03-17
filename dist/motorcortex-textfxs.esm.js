@@ -2820,7 +2820,7 @@ var FontWeightValidation = {
 };
 
 var name = "@donkeyclip/motorcortex-textfxs";
-var version = "0.1.11";
+var version = "0.2.0";
 var description = "textfxs plugin for MotorCortex";
 var main = "dist/motorcortex-textfxs.cjs.js";
 var module = "dist/motorcortex-textfxs.esm.js";
