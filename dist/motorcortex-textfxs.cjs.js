@@ -2834,7 +2834,7 @@ var repository = {
 };
 var license = "MIT";
 var engines = {
-	node: ">=8.3.2"
+	node: ">=12"
 };
 var scripts = {
 	"update-force:packages": "./node_modules/npm-check-updates/bin/ncu -u && npm i",
@@ -2879,7 +2879,7 @@ var config = {
 	}
 };
 var peerDependencies = {
-	"@donkeyclip/motorcortex": "^7"
+	"@donkeyclip/motorcortex": ">= 8 < 9"
 };
 var devDependencies = {
 	"@babel/cli": "7.17.6",
@@ -2890,7 +2890,7 @@ var devDependencies = {
 	"@babel/preset-env": "7.16.11",
 	"@commitlint/cli": "16.2.3",
 	"@commitlint/config-conventional": "16.2.1",
-	"@donkeyclip/motorcortex": "7.9.3",
+	"@donkeyclip/motorcortex": "8.0.0",
 	"@donkeyclip/motorcortex-player": "2.5.2",
 	"@rollup/plugin-babel": "5.3.1",
 	"@rollup/plugin-commonjs": "21.0.2",
