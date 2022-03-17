@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://www.github.com/donkeyclip/motorcortex-textfxs/compare/v0.1.11...v0.2.0) (2022-03-17)
+
+
+### Features
+
+* declare mc 8 as compatible ([07d46aa](https://www.github.com/donkeyclip/motorcortex-textfxs/commit/07d46aa9a6b301c49f34939977ed07fae214b84f))
+
 ### [0.1.11](https://www.github.com/donkeyclip/motorcortex-textfxs/compare/v0.1.10...v0.1.11) (2022-02-28)
 
 
