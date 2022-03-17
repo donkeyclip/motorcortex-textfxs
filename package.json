@@ -1,6 +1,6 @@
 {
   "name": "@donkeyclip/motorcortex-textfxs",
-  "version": "0.1.11",
+  "version": "0.2.0",
   "description": "textfxs plugin for MotorCortex",
   "main": "dist/motorcortex-textfxs.cjs.js",
   "module": "dist/motorcortex-textfxs.esm.js",
