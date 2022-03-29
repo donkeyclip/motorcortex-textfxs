@@ -2896,7 +2896,7 @@ var devDependencies = {
 	"@rollup/plugin-node-resolve": "13.1.3",
 	"@semantic-release/changelog": "6.0.1",
 	"@semantic-release/git": "10.0.1",
-	"@semantic-release/github": "8.0.2",
+	"@semantic-release/github": "8.0.4",
 	"@semantic-release/npm": "9.0.1",
 	"@size-limit/preset-big-lib": "6.0.4",
 	"babel-loader": "8.2.4",
