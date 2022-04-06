@@ -2924,7 +2924,7 @@ var devDependencies = {
 	"size-limit": "6.0.4",
 	webpack: "5.71.0",
 	"webpack-cli": "4.9.2",
-	"webpack-dev-server": "4.8.0"
+	"webpack-dev-server": "4.8.1"
 };
 var pkg = {
 	name: name,
