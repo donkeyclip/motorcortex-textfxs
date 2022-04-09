@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.0](https://github.com/donkeyclip/motorcortex-textfxs/compare/v0.2.0...v0.3.0) (2022-04-09)
+
+
+### Features
+
+* drop explorer 11 support ([3d5ea9a](https://github.com/donkeyclip/motorcortex-textfxs/commit/3d5ea9acbd26ad328609b173f40c976b8a43c579))
+* update compatibility with motorcortex ([870600b](https://github.com/donkeyclip/motorcortex-textfxs/commit/870600b6661d810069a61bc42e8ee7e4b57bf775))
+
+
+### Bug Fixes
+
+* delete commitlint.config.js ([026589a](https://github.com/donkeyclip/motorcortex-textfxs/commit/026589acd32e6c4890bc81a0cd254e9ec2ffbbe9))
+
 ## [0.2.0](https://www.github.com/donkeyclip/motorcortex-textfxs/compare/v0.1.11...v0.2.0) (2022-03-17)
 
 
