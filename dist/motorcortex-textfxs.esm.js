@@ -663,7 +663,7 @@ var devDependencies = {
 	"@size-limit/preset-big-lib": "6.0.4",
 	"babel-loader": "8.2.4",
 	browserslist: "4.20.2",
-	"caniuse-lite": "1.0.30001327",
+	"caniuse-lite": "1.0.30001328",
 	commitizen: "4.2.4",
 	concurrently: "7.1.0",
 	"core-js": "3.21.1",
