@@ -119,4 +119,4 @@ clip.addIncident(Shadow, 0);
 clip.addIncident(SvgLines, 0);
 clip.addIncident(FontWeight, 0);
 
-new Player({ clip, scaleToFit: true, pointerEvents: true });
+new Player({ clip });
