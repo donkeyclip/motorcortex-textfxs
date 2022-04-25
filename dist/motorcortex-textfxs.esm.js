@@ -662,7 +662,7 @@ var devDependencies = {
 	"@semantic-release/npm": "9.0.1",
 	"@size-limit/preset-big-lib": "6.0.4",
 	"babel-loader": "8.2.5",
-	browserslist: "4.20.2",
+	browserslist: "4.20.3",
 	"caniuse-lite": "1.0.30001332",
 	commitizen: "4.2.4",
 	concurrently: "7.1.0",
