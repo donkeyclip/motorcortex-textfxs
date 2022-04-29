@@ -650,7 +650,7 @@ var devDependencies = {
 	"@babel/preset-env": "7.16.11",
 	"@commitlint/cli": "16.2.4",
 	"@commitlint/config-conventional": "16.2.4",
-	"@donkeyclip/motorcortex": "8.0.4",
+	"@donkeyclip/motorcortex": "9.1.1",
 	"@donkeyclip/motorcortex-player": "2.9.5",
 	"@rollup/plugin-babel": "5.3.1",
 	"@rollup/plugin-commonjs": "21.1.0",
