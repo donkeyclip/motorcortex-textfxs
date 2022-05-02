@@ -657,7 +657,7 @@ var devDependencies = {
 	"@rollup/plugin-babel": "5.3.1",
 	"@rollup/plugin-commonjs": "21.1.0",
 	"@rollup/plugin-json": "4.1.0",
-	"@rollup/plugin-node-resolve": "13.2.1",
+	"@rollup/plugin-node-resolve": "13.3.0",
 	"@semantic-release/changelog": "6.0.1",
 	"@semantic-release/git": "10.0.1",
 	"@semantic-release/github": "8.0.4",
