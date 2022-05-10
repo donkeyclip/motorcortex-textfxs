@@ -668,7 +668,7 @@ var devDependencies = {
 	"caniuse-lite": "1.0.30001339",
 	commitizen: "4.2.4",
 	concurrently: "7.1.0",
-	"core-js": "3.22.4",
+	"core-js": "3.22.5",
 	"cz-conventional-changelog": "3.3.0",
 	eslint: "7.32.0",
 	"eslint-config-prettier": "8.5.0",
