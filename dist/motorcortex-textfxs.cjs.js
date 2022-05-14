@@ -650,7 +650,7 @@ var devDependencies = {
 	"@babel/plugin-syntax-jsx": "7.16.7",
 	"@babel/plugin-transform-react-jsx": "7.17.3",
 	"@babel/preset-env": "7.17.10",
-	"@commitlint/cli": "16.2.4",
+	"@commitlint/cli": "16.3.0",
 	"@commitlint/config-conventional": "16.2.4",
 	"@donkeyclip/motorcortex": "9.2.0",
 	"@donkeyclip/motorcortex-player": "2.10.1",
