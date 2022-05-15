@@ -667,7 +667,7 @@ var devDependencies = {
 	browserslist: "4.20.3",
 	"caniuse-lite": "1.0.30001341",
 	commitizen: "4.2.4",
-	concurrently: "7.1.0",
+	concurrently: "7.2.0",
 	"core-js": "3.22.5",
 	"cz-conventional-changelog": "3.3.0",
 	eslint: "7.32.0",
