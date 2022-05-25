@@ -643,11 +643,11 @@ var peerDependencies = {
 };
 var devDependencies = {
 	"@babel/cli": "7.17.10",
-	"@babel/core": "7.18.0",
-	"@babel/eslint-parser": "7.17.0",
+	"@babel/core": "7.18.2",
+	"@babel/eslint-parser": "7.18.2",
 	"@babel/plugin-syntax-jsx": "7.17.12",
 	"@babel/plugin-transform-react-jsx": "7.17.12",
-	"@babel/preset-env": "7.18.0",
+	"@babel/preset-env": "7.18.2",
 	"@commitlint/cli": "16.3.0",
 	"@commitlint/config-conventional": "16.2.4",
 	"@donkeyclip/motorcortex": "9.4.0",
