@@ -7,13 +7,12 @@ export default class SvgExplosion extends HTMLClip {
       this.attrs.fontFamily,
       this.attrs.fontWeight
     );
-    const font = [
+    return [
       {
         type: `google-font`,
         src: `https://fonts.googleapis.com/css2?family=${family}&display=swap`,
       },
     ];
-    return font;
   }
 
   get html() {
@@ -26,7 +25,7 @@ export default class SvgExplosion extends HTMLClip {
     for (let i = 0; i < text.length; i++) {
       const style = `color : ${colors[i % colors.length]};`;
       const singleChar = text.slice(i, i + 1);
-      const singleCharElement = `<span 
+      const singleCharElement = `<span
           id="text"
           style="${style}"
           class="letter letter-${i}"
@@ -41,24 +40,24 @@ export default class SvgExplosion extends HTMLClip {
         const point2 = this.textSize * 0.1;
         const point3 = this.textSize * 0.1 * 2;
         polygons += `
-          <polygon 
+          <polygon
             class="poligon-${i}-${j} poligon"
             points="0,0 ${point1},0 ${point2},${point3}"
             style="fill: ${colors[i % colors.length]};"
           ></polygon>`;
 
         circles += `
-          <circle 
+          <circle
             r="${this.textSize * 0.052}"
             class="circ circ-${i}-${j}"
             style="fill:rgb(238, 238, 238);"
           ></circle>`;
       }
     }
-    const html = `
+    return `
       <div class="wrapper">
         <div class="container">
-          <p 
+          <p
             id="text"
             style="font-size:${this.textSize}px"
             class="text"
@@ -70,7 +69,6 @@ export default class SvgExplosion extends HTMLClip {
         </div>
       </div>
       `;
-    return html;
   }
 
   get css() {
@@ -85,7 +83,7 @@ export default class SvgExplosion extends HTMLClip {
         transform: translateY(-50%);
         overflow: overlay;
       }
-      
+
       .text, .offscreen-text {
         width: 100%;
         top: 50%;
@@ -95,12 +93,12 @@ export default class SvgExplosion extends HTMLClip {
         text-align: center;
         font-family: ${this.attrs.fontFamily}
       }
-      
+
       .offscreen-text {
         text-align: center;
         top: -9999px;
       }
-      
+
       .letter{
         display:inline-block;
         font-weight: 800;
