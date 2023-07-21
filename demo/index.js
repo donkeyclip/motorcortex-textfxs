@@ -76,7 +76,6 @@ const Shadow = new Clip.Shadow(
   },
   {
     selector: ".container2",
-    duration: 3000,
   }
 );
 
