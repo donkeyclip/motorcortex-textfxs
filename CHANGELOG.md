@@ -1,5 +1,13 @@
 # Changelog
 
+### [0.3.1](https://github.com/donkeyclip/motorcortex-textfxs/compare/v0.3.0...v0.3.1) (2023-07-21)
+
+
+### Bug Fixes
+
+* fix demo ([c79e287](https://github.com/donkeyclip/motorcortex-textfxs/commit/c79e287aef1809f1f7b9ac1ace351015954d26d7))
+* resolve dependency issues ([399a59e](https://github.com/donkeyclip/motorcortex-textfxs/commit/399a59e156183962daf5228ef901ec874463f297))
+
 ## [0.3.0](https://github.com/donkeyclip/motorcortex-textfxs/compare/v0.2.0...v0.3.0) (2022-04-09)
 
 
